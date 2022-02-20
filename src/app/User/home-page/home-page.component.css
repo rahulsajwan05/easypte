@@ -1,0 +1,138 @@
+.navbar-spacer {
+    flex: 1 2 auto;
+  }
+  
+  
+  .form-control.ng-touched.ng-invalid {
+    border: 1px solid red;
+  }
+
+  .form-control.ng-touched.ng-invalid {
+    border: 1px solid green;
+  }
+  
+  .bgcolor
+      {
+        background: linear-gradient(to right, #bdc3c7, #2c3e50);
+     
+      }
+  
+  #heading{
+    background-color: yellow;
+    /* width: 1px; */
+  }
+
+  .blog-bg-color{
+   height: fit-content;
+  }
+
+  /* #heading-0f-benefits{
+    margin-left: 50px;
+    margin-top: 50px;
+  } */
+  
+  .span4 img {
+    margin-right: 10px;
+}
+.span4 .img-left {
+    float: left;
+
+}
+
+.head{
+  margin-left: 650px;
+  font-weight: bold;
+}
+
+#blog-heading{
+  font-size: 30px;
+  font-weight: bold;
+  background-color: darkslateblue;
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+
+
+.bgcolor1{
+  height: max-content;
+}
+.bg-color-footer{
+  height: max-content;
+  background: linear-gradient(to top, #000000, #434343);
+  
+}
+
+.text {
+  color: aliceblue;
+  /* padding-left: 50px; */
+  text-align: center;
+}
+
+.paragraph{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.containerss {
+  font-size: 16px;
+  line-height: 16px;
+  height: 63px;
+  overflow: hidden;
+}
+
+
+.show {
+  overflow: visible;
+  height: auto;
+}
+  /* .image{
+    background-image: url("../../../assets/Home Page/pexels-hasan-albari-1229861.jpg");
+    alt: login_image;
+
+    vertical-align: middle;
+    border-style: none;
+    height: 540px;
+    width: 1500px;    
+    opacity: 0.5; */
+    
+    /* background-position: center;   
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    position: relative; 
+    opacity: 0.8; */
+  /* } */
+
+  /* .container {
+    float: right;
+    margin-right: 10px;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+    background-color: whitesmoke;
+    padding: 30px;
+
+    height: 350px;
+    width: 28%;
+  } */
+
+  /* :host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+
+  /* mat-card {
+    max-width: 1000px;
+    margin: 2em auto;
+    text-align: center;
+  }
+    
+  mat-form-field {  
+    display: block;
+  } */

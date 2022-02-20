@@ -1,0 +1,104 @@
+<body class="bgcolor" style="height: max-content;">
+
+  <mat-toolbar color="primary">
+    <span>
+      <mat-icon>eco</mat-icon>Pte is Easy
+    </span>
+
+    <div class="navbar-spacer"></div>
+    <a mat-button routerLink="/pteiseasy">Home</a>
+    <a mat-button routerLink="/blogs">Blogs</a>
+    <a mat-button routerLink="/about">About-PTE</a>
+    <a mat-button routerLink="/contact-us">Contact-us</a>
+  </mat-toolbar>
+
+</body>
+
+
+<!-- HEADING -->
+<div class="container pt-5">
+
+  <div>
+    <h1 class="text-center" id="blog-heading">Our New Blogs</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 align-self-center pt-5" *ngFor="let card of cards">
+      <div class="card card-block">
+        <mat-card class="example-card">
+          <mat-card-header layout="row" layout-align="center center">
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title class="hidden">{{card.id}}</mat-card-title>
+            <mat-card-title>{{card.title}}</mat-card-title>
+
+          </mat-card-header>
+          <img mat-card-image [src]="card.img" alt="Photo of a Shiba Inu">
+          <mat-card-content   class="containerss" [class.show]="card.visible" *ngIf="card.id!==idd" >
+            <p>
+              {{card.description}}
+            </p>
+          </mat-card-content>
+
+          <mat-card-content *ngIf="card.id===idd && shows===true ">
+            <p>
+              {{card.description}} ;;
+            </p>
+          </mat-card-content>
+
+        
+
+          <!-- <ng-template #elseBlock>Content to render when condition is false.</ng-template> -->
+          <mat-card-actions>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"
+              (click)="modelopen(card.id)">
+              Read More
+            </button>
+            <br>
+            <br>
+            <!-- <button type="button" class="btn btn-primary" (click)="alterDescriptionText(card.id)">
+              {{ showShortDesciption ? 'SHOW ALL': 'SHOW LESS' }}
+            </button> -->
+
+            <button (click)="card.visible = !card.visible">{{ card.visible ? 'Show less': 'Show More' }}</button>
+            <!-- <button type="button" class="btn btn-primary" (click)="readmore(card.id)"> Read More</button> -->
+
+            <!-- SHOW AND HIDE BUTTON START -->
+            <button type="button" class="btn btn-primary" (click)="hide(card.id)">
+              Hide
+            </button>
+
+            <button type="button" class="btn btn-primary" (click)="showbtn(card.id)">
+              Show
+            </button>
+
+
+            <!-- SHOW AND HIDE BUTTON ENDS -->
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Model</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{title}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

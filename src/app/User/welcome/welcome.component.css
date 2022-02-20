@@ -1,0 +1,32 @@
+.select_box{
+    background: transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid;
+    border-radius: 0px;
+    appearance: none;
+    position: relative;
+}
+.select_box_cover{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.select_box_cover::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 8px solid #4d4c4c;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    right: 6px;
+    pointer-events: none;
+    top: 20px;
+}
+.select_box:focus,.select_box:active{
+    outline: none;
+    box-shadow: none;
+}
+

@@ -1,0 +1,197 @@
+<!-- HEADER -->
+<html>
+
+<body class="bgcolor">
+
+  <mat-toolbar color="primary">
+    <span>
+      <mat-icon>eco</mat-icon>Pte is Easy
+    </span>
+
+    <div class="navbar-spacer"></div>
+    <a mat-button routerLink="/pteiseasy" routerLinkActive="active" >Home</a>
+    <a mat-button routerLink="/blogs"  routerLinkActive="active" >Blogs</a>
+    <a mat-button routerLink="/about" routerLinkActive="active" >About-PTE</a>
+    <a mat-button routerLink="/contact-us" routerLinkActive="active">Contact-us</a>
+  </mat-toolbar>
+
+  <!-- HEADER ENDS -->
+
+  <!-- FORM START -->
+  <div class="container pt-3">
+
+
+    
+    <!-- //aother project -->
+    <!-- <select  class="float-md-right setLanguage" [(ngModel)]="selectedGroup" class="form-control">
+      <option *ngFor="let language of department" >
+        {{language.name}}
+      </option>
+  </select>
+  <input type="button" (click)="getVal()" value="submit"/>
+  [selected]="language.value==selected"
+  <p>Value: {{ selectedGroup }}</p> -->
+  
+
+  
+    <div class="row justify-content-sm-center float-sm-right  pt-5">
+      <div class="col-md-12 shadow round pb-3 pr-5 pl-5" style="background-color: white;">
+        <div class="text-center pt-4 pb-2 text-secondary " id="heading"> Click Here For classes</div>
+        <form [formGroup]="submitform">
+          <div class="form-group ">
+            <label class="col-form-label">Name:</label>
+            <input formControlName="name" type="text" class="form-control pr-5 pl-5 ">
+            <small *ngIf="name.invalid && name.touched" class="text-danger">Name is
+              Required
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label class="col-form-label">Email:</label>
+            <input formControlName="email" type="email" class="form-control pr-5 pl-5">
+            <small *ngIf="email.invalid && email.touched" class="text-danger">Email is
+              Required
+            </small>
+          </div>
+
+          <div class="form-group">
+            <label class="col-form-label">Mobile No:</label>
+            <input formControlName="mobile" minlength="10" maxlength="10" type="text" class="form-control pr-5 pl-5">
+            <small *ngIf="mobile.invalid && mobile.touched" class="text-danger">Mobile is
+              Required
+            </small>
+          </div>
+
+          <button (click)="submitformbutton()" [disabled]="submitform.invalid" type="button" class="btn btn-primary">
+            Submit </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- FORM ENDS -->
+</body>
+
+
+<!-- <WHY SHOULD YOU USE ONLINE COACHINg  START-->
+
+<body class=blog-bg-color>
+
+  <!-- <div class="container">
+  <div class="clearfix">
+     <img class="img-fluid pt-5 float-left pull-left mr-5" alt="Responsive image" 
+         src="../../../assets/Home Page/girl.jpg"   style="width:600px; height: 600px;">   
+          <div class="content-heading">
+              <h1 class="pt-5" style="float:right;">Benefits Of Online Coaching</h1>     
+          </div>
+</div>
+</div> -->
+
+
+
+
+  <div class="container">
+    <div class="block pt-5">
+      <div class="row">
+        <div class="span4">
+          <img class="img-left pull-left mr-5" src="../../../assets/Home Page/girl.jpg"
+            style="width:400px; height: 400px;">
+          <div class="content-heading">
+            <h1 class="head">How Online Classes Helps You </h1>
+          </div>
+
+          <p class="pl-5 paragraph">{{para1}}</p>
+          <p class="paragraph">{{para1}}</p>
+          <p class="paragraph">{{para1}}</p>
+         
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- <WHY SHOULD YOU USE ONLINE COACHINg ENDS-->
+
+
+
+<!-- Our Blogs Start -->
+
+<body class="bgcolor1">
+  <div class="container pt-5">
+
+    <div>
+      <h1 class="text-center" id="blog-heading">Our New Blogs</h1>
+    </div>
+  
+    <div class="row">
+      <div class="col-sm-4 align-self-center pt-5" *ngFor="let card of cards">
+        <div class="card card-block">
+          <mat-card class="example-card">
+            <mat-card-header layout="row" layout-align="center center">
+              <mat-card-title class="hidden">{{card.id}}</mat-card-title>
+              <mat-card-title>{{card.title}}</mat-card-title>
+  
+            </mat-card-header>
+            <img mat-card-image [src]="card.img" alt="Photo of a Shiba Inu">
+            <mat-card-content   class="containerss" *ngIf="card.id!==idd" >
+              <p class=paragraph>
+                {{card.description}}
+              </p>
+            </mat-card-content>
+  
+            <mat-card-content *ngIf="card.id===idd && shows===true ">
+              <p>
+                {{card.description}} ;;
+              </p>
+            </mat-card-content>
+            
+            <mat-card-actions>
+              <button type="button" class="btn btn-primary" 
+                (click)="modelopen(card.id)" routerLink="/blogs"  routerLinkActive="active">
+                  Go To Blog Section
+              </button>
+              <br>
+              <br>
+
+                         
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+
+<body class="bg-color-footer pt-5"> 
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-sm-1">
+        <img class="h-100 d-inline-block" style="width: 300px; border-radius: 15px;" src="../../../assets/Home Page/girl.jpg">
+      </div>
+      <div class="col-sm-8">
+        <h3 class="text"> OUR SERVICES</h3>
+        <p class="text">Email: rahulsajwan05@gmail.com</p>
+        <p class="text">Phone: +91 9779902190</p>
+        <p class="text">Phone: +91 6239204622</p>
+      </div>
+      <div class="col-sm-3">
+        <h3 class="text"> CONTACT US</h3>
+        <p class="text">Email: rahulsajwan05@gmail.com</p>
+        <p class="text">Phone: +91 9779902190</p>
+        <p class="text">Phone: +91 6239204622</p>
+      </div>
+    </div>
+    <div class="column pt-5" style="color: beige;">
+      <span>PTE IS EASY NOW</span> <br>
+      <span>ALL RIGHTS RESERVED </span>
+    </div>
+    
+  </div>
+
+</body>
+<!-- Our Blogs ENDS -->
+
+</html>
