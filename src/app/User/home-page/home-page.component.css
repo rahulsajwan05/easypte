@@ -1,6 +1,4 @@
-.navbar-spacer {
-    flex: 1 2 auto;
-  }
+
   
   
   .form-control.ng-touched.ng-invalid {
@@ -18,7 +16,7 @@
       }
   
   #heading{
-    background-color: yellow;
+    background-color: #ffffff;
     /* width: 1px; */
   }
 
@@ -40,23 +38,18 @@
 }
 
 .head{
-  margin-left: 650px;
+  /* margin-left: 650px; */
   font-weight: bold;
 }
 
 #blog-heading{
   font-size: 30px;
   font-weight: bold;
-  background-color: darkslateblue;
+  background-color: #3f51b5;
   color: white;
   border-radius: 15px;
   padding: 15px;
 }
-
-.example-card {
-  max-width: 400px;
-}
-
 
 
 .bgcolor1{
@@ -136,3 +129,6 @@
   mat-form-field {  
     display: block;
   } */
+
+  
+  

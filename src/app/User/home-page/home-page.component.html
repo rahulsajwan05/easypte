@@ -9,9 +9,9 @@
     </span>
 
     <div class="navbar-spacer"></div>
-    <a mat-button routerLink="/pteiseasy" routerLinkActive="active" >Home</a>
-    <a mat-button routerLink="/blogs"  routerLinkActive="active" >Blogs</a>
-    <a mat-button routerLink="/about" routerLinkActive="active" >About-PTE</a>
+    <a mat-button routerLink="/pteiseasy" routerLinkActive="active">Home</a>
+    <a mat-button routerLink="/blogs" routerLinkActive="active">Blogs</a>
+    <a mat-button routerLink="/about" routerLinkActive="active">About-PTE</a>
     <a mat-button routerLink="/contact-us" routerLinkActive="active">Contact-us</a>
   </mat-toolbar>
 
@@ -21,7 +21,7 @@
   <div class="container pt-3">
 
 
-    
+
     <!-- //aother project -->
     <!-- <select  class="float-md-right setLanguage" [(ngModel)]="selectedGroup" class="form-control">
       <option *ngFor="let language of department" >
@@ -31,12 +31,14 @@
   <input type="button" (click)="getVal()" value="submit"/>
   [selected]="language.value==selected"
   <p>Value: {{ selectedGroup }}</p> -->
-  
 
-  
+
+
     <div class="row justify-content-sm-center float-sm-right  pt-5">
-      <div class="col-md-12 shadow round pb-3 pr-5 pl-5" style="background-color: white;">
-        <div class="text-center pt-4 pb-2 text-secondary " id="heading"> Click Here For classes</div>
+      <div class="col-md-12 shadow round pb-3 pr-5 pl-5" style="background-color: #9ca5ac;border-radius: 40px;">
+        <div class="text-center card text-secondary " id="heading" style="margin-top: 15px; padding: 5px; border-radius: 20px;"> 
+          Click Here For classes
+        </div>
         <form [formGroup]="submitform">
           <div class="form-group ">
             <label class="col-form-label">Name:</label>
@@ -102,9 +104,9 @@
           <p class="pl-5 paragraph">{{para1}}</p>
           <p class="paragraph">{{para1}}</p>
           <p class="paragraph">{{para1}}</p>
-         
 
-          
+
+
         </div>
       </div>
     </div>
@@ -118,77 +120,78 @@
 <!-- Our Blogs Start -->
 
 <body class="bgcolor1">
-  <div class="container pt-5">
+  <div class="container pt-3">
 
     <div>
       <h1 class="text-center" id="blog-heading">Our New Blogs</h1>
     </div>
-  
+
     <div class="row">
-      <div class="col-sm-4 align-self-center pt-5" *ngFor="let card of cards">
-        <div class="card card-block">
-          <mat-card class="example-card">
+      <div class="col-sm-4 align-self-center mt-3 mb-3" *ngFor="let card of cards">
+        <div class="card-block">
+          <mat-card class="example-card ">
             <mat-card-header layout="row" layout-align="center center">
               <mat-card-title class="hidden">{{card.id}}</mat-card-title>
               <mat-card-title>{{card.title}}</mat-card-title>
-  
+
             </mat-card-header>
             <img mat-card-image [src]="card.img" alt="Photo of a Shiba Inu">
-            <mat-card-content   class="containerss" *ngIf="card.id!==idd" >
+            <mat-card-content class="containerss" *ngIf="card.id!==idd">
               <p class=paragraph>
                 {{card.description}}
               </p>
             </mat-card-content>
-  
+
             <mat-card-content *ngIf="card.id===idd && shows===true ">
               <p>
                 {{card.description}} ;;
               </p>
             </mat-card-content>
-            
+
             <mat-card-actions>
-              <button type="button" class="btn btn-primary" 
-                (click)="modelopen(card.id)" routerLink="/blogs"  routerLinkActive="active">
-                  Go To Blog Section
+              <button type="button" class="btn btn-primary homeButton" (click)="modelopen(card.id)" routerLink="/blogs"
+                routerLinkActive="active">
+                Go To Blog Section
               </button>
               <br>
               <br>
 
-                         
+
             </mat-card-actions>
           </mat-card>
         </div>
       </div>
     </div>
   </div>
-  
-  
+
+
 </body>
 
-<body class="bg-color-footer pt-5"> 
-  <div class="container pt-5">
+<body class="bg-color-footer pt-3">
+  <div class="container">
     <div class="row">
-      <div class="col-sm-1">
-        <img class="h-100 d-inline-block" style="width: 300px; border-radius: 15px;" src="../../../assets/Home Page/girl.jpg">
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <img class="h-100 d-inline-block img-fluid" style="width: 300px; border-radius: 15px;"
+          src="../../../assets/Home Page/girl.jpg">
       </div>
-      <div class="col-sm-8">
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="word-wrap: break-word;">
         <h3 class="text"> OUR SERVICES</h3>
         <p class="text">Email: rahulsajwan05@gmail.com</p>
         <p class="text">Phone: +91 9779902190</p>
         <p class="text">Phone: +91 6239204622</p>
       </div>
-      <div class="col-sm-3">
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="word-wrap: break-word;">
         <h3 class="text"> CONTACT US</h3>
         <p class="text">Email: rahulsajwan05@gmail.com</p>
         <p class="text">Phone: +91 9779902190</p>
         <p class="text">Phone: +91 6239204622</p>
       </div>
     </div>
-    <div class="column pt-5" style="color: beige;">
+    <div class="column" style="color: beige;">
       <span>PTE IS EASY NOW</span> <br>
       <span>ALL RIGHTS RESERVED </span>
     </div>
-    
+
   </div>
 
 </body>

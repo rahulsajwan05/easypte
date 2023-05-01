@@ -56,6 +56,58 @@ export class HomePageComponent implements OnInit {
                     img: '../../../assets/Home Page/girl.jpg',
                     visible: false
                   },
+                  // {
+                  //   id: 3,
+                  //   title: 'Card Title 3',
+                  //   description: 'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content',
+                  //   buttonText: 'Button',
+                  //   img: '../../../assets/Home Page/girl.jpg',
+                  //   visible: false
+                  // },
+                  // {
+                  //   id: 4,
+                  //   title: 'Card Title 3',
+                  //   description: 'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content',
+                  //   buttonText: 'Button',
+                  //   img: '../../../assets/Home Page/girl.jpg',
+                  //   visible: false
+                  // },
+                  // {
+                  //   id: 5,
+                  //   title: 'Card Title 3',
+                  //   description: 'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content',
+                  //   buttonText: 'Button',
+                  //   img: '../../../assets/Home Page/girl.jpg',
+                  //   visible: false
+                  // },
+                  // {
+                  //   id: 6,
+                  //   title: 'Card Title 3',
+                  //   description: 'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+ 
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content'+
+                  //   'Some quick example text to build on the card title and make up the bulk of the card content',
+                  //   buttonText: 'Button',
+                  //   img: '../../../assets/Home Page/girl.jpg',
+                  //   visible: false
+                  // },
                 ];
 
                 // department=[

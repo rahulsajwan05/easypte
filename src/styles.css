@@ -4,3 +4,35 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
+
+.navbar-spacer {
+    flex: 1 2 auto;
+  }
+
+  a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+ .example-card {
+    border-radius: 45px !important;
+    background-color: #b3b8bc !important;
+  }
+
+  .mat-card-image{
+    padding: 5px;
+    border-radius: 20px;
+  }
+
+  button{
+    border-radius: 25px !important;
+  }
+
+  .mat-card-actions{
+    text-align: center;
+  }
+
+  .homeButton{
+    color: #fff;
+    background-color: #5e5e5e !important;
+  }

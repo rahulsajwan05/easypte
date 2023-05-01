@@ -26,7 +26,6 @@ import { ContactUsComponent } from './user/contact-us/contact-us.component';
 import { BlogPteComponent } from './user/blog-pte/blog-pte.component';
 import { HomePageComponent } from './user/home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { WelcomeComponent } from './User/welcome/welcome.component';
 import { MasterService } from './Service/master.service';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -41,7 +40,6 @@ import { HttpClientModule } from '@angular/common/http';
     ContactUsComponent,
     BlogPteComponent,
     HomePageComponent,
-    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
