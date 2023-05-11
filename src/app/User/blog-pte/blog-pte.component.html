@@ -1,4 +1,4 @@
-<body class="bgcolor" style="height: max-content;">
+
 
   <mat-toolbar color="primary">
     <span>
@@ -6,25 +6,21 @@
     </span>
 
     <div class="navbar-spacer"></div>
-    <a mat-button routerLink="/pteiseasy">Home</a>
+    <a mat-button routerLink="/">Home</a>
     <a mat-button routerLink="/blogs">Blogs</a>
     <a mat-button routerLink="/about">About-PTE</a>
     <a mat-button routerLink="/contact-us">Contact-us</a>
   </mat-toolbar>
 
-</body>
+
 
 
 <!-- HEADING -->
-<div class="container pt-5">
+<div class="container">
 
-  <div>
-    <h1 class="text-center" id="blog-heading">Our New Blogs</h1>
-  </div>
-
-  <div class="row">
+  <div class="row pb-5">
     <div class="col-sm-4 align-self-center pt-5" *ngFor="let card of cards">
-      <div class="card card-block">
+      <div class="card-block">
         <mat-card class="example-card">
           <mat-card-header layout="row" layout-align="center center">
             <div mat-card-avatar class="example-header-image"></div>
